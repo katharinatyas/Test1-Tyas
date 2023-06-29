@@ -15,8 +15,8 @@ use App\Http\Controllers\UltahController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return redirect()->route('index.index');
+});
 
 Route::resource('/index', UltahController::class);
